@@ -1,0 +1,13 @@
+Code 1-Discuss  1
+-Run code in the Slide Page 6 (Assignment is Tricky Part 1): Giá trị trả về: n1.i=5; n2.i=10.
+-Run code in the Slide Page 7 (Assignment is Tricky Part 2):Giá trị trả về: (n2.i=10; n1.i=10); (n2.i=20; n1.i=20).
+-Run code in the Slide Page 9 (Aliasing): n.i=15
++Khác nhau giữa các code:
+Codethứ nhất, n1 và n2 là hai đối tượng riêng biệt, và việc thay đổi giá trị của n2.i không ảnh hưởng đến n1.i.
+Code thứ hai, n1 được gán tham chiếu đến đối tượng mà n2 đang tham chiếu, nên bất kỳ thay đổi nào với n1.i hoặc n2.i đều ảnh hưởng đến đối tượng chung mà cả hai tham chiếu.
+Code thứ ba, đối tượng n được truyền vào phương thức f theo tham chiếu, do đó thay đổi trong phương thức này ảnh hưởng trực tiếp đến đối tượng ban đầu.
+
+Code 2: Learn Java on W3S
+Discuss 2: Không gặp khó khăn
+
+
