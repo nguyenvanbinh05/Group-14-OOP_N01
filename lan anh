@@ -1,0 +1,5 @@
+CODE1
+Run code in the Slide page 6 (Assignment is Tricky Part 1): n1.i = 5 ; n2.i = 10; 
+Run code in the Slide Page 7 (Assignment is Tricky Part 2): n1 = n2 ; n2.i = 10 ; n1.i = 20 ;
+Run code in the Slide Page 9 (Aliasing): n.i = 15 
+CODE2 
