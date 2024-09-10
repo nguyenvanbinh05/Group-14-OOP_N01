@@ -1,0 +1,62 @@
+public class DiscreteSignal {
+    private int[] x;  // Mảng chứa các giá trị tín hiệu rời rạc
+    private int n;    // Biến n trong biểu thức [1]
+    
+    // Constructor khởi tạo với mảng tín hiệu x và giá trị n
+    public DiscreteSignal(int[] x, int n) {
+        this.x = x;
+        this.n = n;
+    }
+    
+    // Phương thức tính toán giá trị của tín hiệu rời rạc tại n
+    public int calculateSignalAt(int n) {
+        return x[n] * delta(n);
+    }
+    
+    // Hàm delta d (n)
+    private int delta(int n) {
+        return (n == 0) ? 1 : 0;
+    }
+    
+    // Phương thức xuất giá trị tín hiệu tại n
+    public void printSignalAt(int n) {
+        System.out.println("Signal at n = " + n + " is: " + calculateSignalAt(n));
+    }
+    
+    // Phương thức tính toán tín hiệu cho một khoảng giá trị n
+    public void calculateSignalForRange(int start, int end) {
+        for (int i = start; i <= end; i++) {
+            System.out.println("Signal at n = " + i + " is: " + calculateSignalAt(i));
+        }
+    }
+    
+    // Phương thức nhập giá trị x
+    public void setX(int[] x) {
+        this.x = x;
+    }
+    
+    // Phương thức lấy giá trị x
+    public int[] getX() {
+        return x;
+    }
+    
+    // Phương thức nhập giá trị n
+    public void setN(int n) {
+        this.n = n;
+    }
+    
+    // Phương thức lấy giá trị n
+    public int getN() {
+        return n;
+    }
+    
+    public static void main(String[] args) {
+        int[] x = {1, 2, 3, 4, 5};
+        DiscreteSignal ds = new DiscreteSignal(x, 0);
+        
+        ds.printSignalAt(0);
+        ds.printSignalAt(1);
+        
+        ds.calculateSignalForRange(0, 4);
+    }
+}
