@@ -1,0 +1,49 @@
+//cau1 
+public interface Signal {
+    double getValue(double t);
+}
+public class DiscreteSignal implements Signal {
+    private double[] values;
+    private double samplingInterval;
+
+    public DiscreteSignal(double[] values, double samplingInterval) {
+        this.values = values;
+        this.samplingInterval = samplingInterval;
+    }
+    @Override
+    public double getValue(double t) {
+        int index = (int)(t / samplingInterval);
+        if (index < 0 || index >= values.length) {
+            throw new IndexOutOfBoundsException("Time t is out of range for this discrete signal.");
+        }
+        return values[index];
+    }
+}
+public class ContinuousSignal implements Signal {
+    public ContinuousSignal() {
+    }
+    @Override
+    public double getValue(double t) {
+        return Math.cos(t);
+    }
+}
+//bai2 
+public class Radar {
+    private DiscreteSignal signal;
+    public Radar() {
+        double[] values = new double[16];
+        for (int n = 0; n <= 15; n++) {
+            values[n] = 1.0 - n / 15.0;
+        }
+        this.signal = new DiscreteSignal(values, 1.0);
+    }
+    public double analyzeSignal(int n) {
+        return signal.getValue(n);
+    }
+    public static void main(String[] args) {
+        Radar radar = new Radar();
+        int n = 4;
+        System.out.println("Giá trị tín hiệu tại n = " + n + " là: " + radar.analyzeSignal(n));
+    }
+}
+
