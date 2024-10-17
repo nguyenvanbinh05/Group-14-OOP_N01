@@ -1,0 +1,10 @@
+1,Kẹo Vị Kem,5000.0,851
+2,Kem Vị Cay,15000.0,499
+3,Nước Uống Tăng Lực Xua Tan Mệt Mỏi Căng Thẳng Tức Thì ,12000.0,222
+4,Đồ Chay Giả Đồ Ăn Mặn Giống Thật,115000.0,199
+5,Kem socola,15000.0,90
+6,Đồ chơi dành cho trẻ em thú vị,12000.0,1000
+8,Đồ Chay Giả Đồ Ăn Mặn Giống Thật,115000.0,69
+7,Kẹo,15000.0,13
+9,Đồ ăn trung quốc,1000.0,184
+11,Đồ ăn trung quốc,1000.0,184

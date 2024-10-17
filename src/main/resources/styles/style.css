@@ -1,0 +1,20 @@
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #0013ff; /* Màu chữ khi hàng được chọn */
+    -fx-font-weight: bold;
+}
+
+
+.table-cell:filled:selected {
+    -fx-text-fill: #0013ff; /* Màu chữ của ô khi được chọn */
+}
+
+.table-cell {
+    -fx-text-fill: black; /* Màu chữ mặc định */
+    -fx-font-size: 15px;
+}
+
+
+.table-row-cell {
+    -fx-background-color: transparent; /* Nền mặc định khi không chọn */
+}

@@ -1,0 +1,93 @@
+package com.example.model;
+
+public class Order {
+    private int orderId;
+    private int productId;
+    private String productName;
+    private double price;
+    private int quantityInStock;
+    private int quantityPurchased;
+    private double totalValue;  // Thêm thuộc tính tổng giá trị
+
+    // Constructor mới với totalValue
+    public Order(int orderId, int productId, String productName, double price, int quantityInStock, int quantityPurchased, double totalValue) {
+        this.orderId = orderId;
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+        this.quantityInStock = quantityInStock;
+        this.quantityPurchased = quantityPurchased;
+        this.totalValue = totalValue;  // Gán giá trị cho tổng giá trị
+    }
+
+    // Constructor cũ (nếu cần thiết, bạn có thể giữ nó nếu không cần tổng giá trị)
+    public Order(int orderId, int productId, String productName, double price, int quantityInStock, int quantityPurchased) {
+        this.orderId = orderId;
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+        this.quantityInStock = quantityInStock;
+        this.quantityPurchased = quantityPurchased;
+        this.totalValue = price * quantityPurchased;  // Tính tổng giá trị
+    }
+
+    // Getter và Setter cho totalValue
+    public double getTotalValue() {
+        return totalValue;
+    }
+
+    public void setTotalValue(double totalValue) {
+        this.totalValue = totalValue;
+    }
+
+    // Getter và Setter cho tất cả các thuộc tính
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+        this.totalValue = price * quantityPurchased; // Cập nhật tổng giá trị
+    }
+
+    public int getQuantityInStock() {
+        return quantityInStock;
+    }
+
+    public void setQuantityInStock(int quantityInStock) {
+        this.quantityInStock = quantityInStock;
+    }
+
+    public int getQuantityPurchased() {
+        return quantityPurchased;
+    }
+
+    public void setQuantityPurchased(int quantityPurchased) {
+        this.quantityPurchased = quantityPurchased;
+        this.totalValue = price * quantityPurchased; // Cập nhật tổng giá trị
+    }
+}
