@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #e1ffff;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.DashboardController">
+    <children>
+
+        <!-- Khung chức năng với các nút Đơn Hàng, Logo và Đăng Xuất có thể tùy ý di chuyển -->
+        <AnchorPane layoutX="52.0" layoutY="60.0" prefHeight="51.0" prefWidth="688.0" style="-fx-border-color: #66c9f8; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: rgb(215,255,215);">
+
+            <!-- Logo cửa hàng -->
+            <ImageView fitHeight="44.0" fitWidth="67.0" layoutY="2.0" opacity="0.88">
+                <image>
+                    <Image url="@../img/homepage.png" /> <!-- Đường dẫn đến logo cửa hàng -->
+                </image>
+            </ImageView>
+
+            <!-- Nút Đơn Hàng -->
+            <Button layoutX="91.0" layoutY="9.0" onAction="#goToOrderManagement" prefHeight="30.0" prefWidth="254.0" style="-fx-background-color: #ffcc78;" text="Quản Lí Các Đơn Đặt Hàng" />
+
+            <!-- Nút Đăng Xuất -->
+            <Button layoutX="523.0" layoutY="9.0" onAction="#handleLogout" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: #ffb2c4;" text="Đăng Xuất" />
+
+        </AnchorPane>
+
+        <!-- Tiêu đề Quản Lý Cửa Hàng -->
+        <Label layoutX="14.0" layoutY="14.0" style="-fx-font-weight: bolder;" text="Quản Lý Cửa Hàng" textFill="#006af4">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+
+        <!-- Bảng sản phẩm -->
+        <TableView fx:id="productTable" layoutX="55.0" layoutY="122.0" opacity="0.88" prefHeight="406.0" prefWidth="688.0">
+            <columns>
+                <TableColumn fx:id="productIdColumn" prefWidth="61.5999755859375" style="-fx-background-color: #afff9b; -fx-border-color: #41a102;" text="ID" />
+                <TableColumn fx:id="productNameColumn" prefWidth="404.800048828125" style="-fx-background-color: #f8f7f7; -fx-border-color: #41a102;" text="Tên Sản Phẩm" />
+                <TableColumn fx:id="productPriceColumn" prefWidth="84.0" style="-fx-background-color: #afff9b; -fx-border-color: #41a102;" text="Giá" />
+                <TableColumn fx:id="productQuantityColumn" prefWidth="112.79986572265625" style="-fx-background-color: #f8f7f7; -fx-border-color: #41a102;" text="Số lượng trong kho" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+
+        <!-- Các trường nhập liệu cho sản phẩm -->
+        <Label layoutX="12.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Mã sản phẩm:" textFill="#0013ff" />
+        <TextField fx:id="productIdField" layoutX="8.0" layoutY="550.0" prefHeight="26.0" prefWidth="182.0" promptText="ID sản phẩm" />
+        <Label layoutX="208.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Tên sản phẩm:" textFill="#0013ff" />
+        <TextField fx:id="productNameField" layoutX="208.0" layoutY="550.0" prefHeight="26.0" prefWidth="182.0" promptText="Tên sản phẩm" />
+        <Label layoutX="400.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Giá:" textFill="#0013ff" />
+        <TextField fx:id="productPriceField" layoutX="400.0" layoutY="550.0" prefHeight="26.0" prefWidth="182.0" promptText="Giá sản phẩm" />
+        <Label layoutX="595.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Số lượng trong kho:" textFill="#0013ff"/>
+        <TextField fx:id="productQuantityField" layoutX="595.0" layoutY="550.0" prefHeight="26.0" prefWidth="182.0" promptText="Số lượng trong kho" />
+
+        <!-- Các nút thao tác trên sản phẩm -->
+        <Button layoutX="157.0" layoutY="584.0" onAction="#addProduct" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #54ff54;" text="Thêm Sản Phẩm" />
+        <Button layoutX="348.0" layoutY="584.0" onAction="#editProduct" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #ffff64;" text="Sửa Thông Tin" />
+        <Button layoutX="531.0" layoutY="584.0" onAction="#deleteProduct" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #f87070;" text="Xóa Sản phẩm" />
+
+    </children>
+</AnchorPane>

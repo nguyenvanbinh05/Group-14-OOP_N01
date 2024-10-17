@@ -1,0 +1,29 @@
+<dependencies>
+  <!-- JavaFX Controls -->
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-controls</artifactId>
+    <version>17.0.2</version>
+  </dependency>
+
+  <!-- JavaFX FXML -->
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-fxml</artifactId>
+    <version>17.0.2</version>
+  </dependency>
+
+  <!-- JavaFX Base -->
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-base</artifactId>
+    <version>17.0.2</version>
+  </dependency>
+
+  <!-- JavaFX Graphics -->
+  <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx-graphics</artifactId>
+    <version>17.0.2</version>
+  </dependency>
+</dependencies>
