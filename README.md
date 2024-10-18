@@ -19,3 +19,30 @@ Dự án lá một hệ thống quản lí cửa hàng, giúp dễ dàng kiểm 
 ## 1.1 UML Component Diagram
 
 ![UML](uml1.png)
+
+## Giao diện đầu tiên
+![Giao diện đầu tiên](firstInterface.png)
+
+## Đăng nhập
+![Đăng nhập](login.png)
+
+## Đăng Kí
+![Đăng kí](register.png)
+
+## Trang chính
+![Trang chính](dashboard.png)
+
+## GitHub Pages Dự Án
+[Truy cập tại đây]()
+
+## DEMO Sản Phẩm
+[Demo video on YouTube]()
+
+
+# Cách Cài Đặt
+1. Clone repository từ GitHub:
+   ```bash
+   hihi
+   
+
+
