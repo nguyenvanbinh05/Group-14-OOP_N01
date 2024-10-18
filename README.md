@@ -15,3 +15,7 @@ Dự án lá một hệ thống quản lí cửa hàng, giúp dễ dàng kiểm 
 
 
 ## UML Dự Án
+
+## 1.1 UML Component Diagram
+
+![UML](uml1.png)
