@@ -29,7 +29,7 @@ public class DashboardController {
     @FXML
     private TableColumn<Product, Double> productPriceColumn;
     @FXML
-    private TableColumn<Product, Integer> productQuantityColumn; // Cột số lượng
+    private TableColumn<Product, Integer> productQuantityColumn;
 
     @FXML
     private TextField productIdField;
@@ -181,8 +181,6 @@ public class DashboardController {
 
             LoginController loginController = loader.getController();
             loginController.setPrimaryStage(primaryStage);
-
-            // Đặt lại scene cho màn hình đăng nhập
             primaryStage.setScene(new Scene(root));
             primaryStage.setTitle("Đăng Nhập");
             primaryStage.show();
@@ -196,11 +194,9 @@ public class DashboardController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/Order.fxml"));
             Parent root = loader.load();
 
-            // Lấy OrderController và truyền primaryStage
             OrderController orderController = loader.getController();
             orderController.setPrimaryStage(primaryStage);
 
-            // Chuyển cảnh sang giao diện quản lý đơn hàng
             primaryStage.setScene(new Scene(root));
             primaryStage.setTitle("Quản Lý Đơn Hàng");
             primaryStage.show();

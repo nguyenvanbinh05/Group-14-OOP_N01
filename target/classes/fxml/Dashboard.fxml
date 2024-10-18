@@ -25,14 +25,14 @@
 
         </AnchorPane>
 
-
+        <!-- Tiêu đề Quản Lý Cửa Hàng -->
         <Label layoutX="14.0" layoutY="14.0" style="-fx-font-weight: bolder;" text="Quản Lý Cửa Hàng" textFill="#006af4">
             <font>
                 <Font size="30.0" />
             </font>
         </Label>
 
-
+        <!-- Bảng sản phẩm -->
         <TableView fx:id="productTable" layoutX="55.0" layoutY="122.0" opacity="0.88" prefHeight="406.0" prefWidth="688.0">
             <columns>
                 <TableColumn fx:id="productIdColumn" prefWidth="61.5999755859375" style="-fx-background-color: #afff9b; -fx-border-color: #41a102;" text="ID" />
@@ -45,7 +45,7 @@
             </columnResizePolicy>
         </TableView>
 
-
+        <!-- Các trường nhập liệu cho sản phẩm -->
         <Label layoutX="12.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Mã sản phẩm:" textFill="#0013ff" />
         <TextField fx:id="productIdField" layoutX="8.0" layoutY="550.0" prefHeight="26.0" prefWidth="182.0" promptText="ID sản phẩm" />
         <Label layoutX="208.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Tên sản phẩm:" textFill="#0013ff" />
@@ -55,7 +55,7 @@
         <Label layoutX="595.0" layoutY="528.0" style="-fx-font-weight: bolder;" text="Số lượng trong kho:" textFill="#0013ff"/>
         <TextField fx:id="productQuantityField" layoutX="595.0" layoutY="550.0" prefHeight="26.0" prefWidth="182.0" promptText="Số lượng trong kho" />
 
-
+        <!-- Các nút thao tác trên sản phẩm -->
         <Button layoutX="157.0" layoutY="584.0" onAction="#addProduct" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #54ff54;" text="Thêm Sản Phẩm" />
         <Button layoutX="348.0" layoutY="584.0" onAction="#editProduct" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #ffff64;" text="Sửa Thông Tin" />
         <Button layoutX="531.0" layoutY="584.0" onAction="#deleteProduct" prefHeight="35.0" prefWidth="101.0" style="-fx-background-color: #f87070;" text="Xóa Sản phẩm" />
