@@ -42,7 +42,7 @@ Dự án lá một hệ thống quản lí cửa hàng, giúp dễ dàng kiểm 
 # Cách Cài Đặt
 1. Clone repository từ GitHub:
    ```bash
-   hihi
+   git clone -b finalProject https://github.com/nguyenvanbinh05/Group-14-OOP_N01.git
    
 
 
