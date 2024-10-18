@@ -33,7 +33,7 @@ Dự án lá một hệ thống quản lí cửa hàng, giúp dễ dàng kiểm 
 ![Trang chính](dashboard.png)
 
 ## GitHub Pages Dự Án
-[Truy cập tại đây](https://github.com/nguyenvanbinh05/Group-14-OOP_N01/tree/main)
+[Truy cập tại đây](https://github.com/nguyenvanbinh05/Group-14-OOP_N01/tree/finalProject)
 
 ## DEMO Sản Phẩm
 [Demo video on YouTube]()
