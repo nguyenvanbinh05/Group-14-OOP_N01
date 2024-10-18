@@ -7,7 +7,7 @@ public class Order {
     private double price;
     private int quantityInStock;
     private int quantityPurchased;
-    private double totalValue;  // Thêm thuộc tính tổng giá trị
+    private double totalValue;
 
 
     public Order(int orderId, int productId, String productName, double price, int quantityInStock, int quantityPurchased, double totalValue) {
@@ -17,7 +17,7 @@ public class Order {
         this.price = price;
         this.quantityInStock = quantityInStock;
         this.quantityPurchased = quantityPurchased;
-        this.totalValue = totalValue;  // Gán giá trị cho tổng giá trị
+        this.totalValue = totalValue;
     }
 
 
@@ -40,7 +40,7 @@ public class Order {
         this.totalValue = totalValue;
     }
 
-    // Getter và Setter cho tất cả các thuộc tính
+
     public int getOrderId() {
         return orderId;
     }
@@ -71,7 +71,7 @@ public class Order {
 
     public void setPrice(double price) {
         this.price = price;
-        this.totalValue = price * quantityPurchased; // Cập nhật tổng giá trị
+        this.totalValue = price * quantityPurchased;
     }
 
     public int getQuantityInStock() {
@@ -88,6 +88,6 @@ public class Order {
 
     public void setQuantityPurchased(int quantityPurchased) {
         this.quantityPurchased = quantityPurchased;
-        this.totalValue = price * quantityPurchased; // Cập nhật tổng giá trị
+        this.totalValue = price * quantityPurchased;
     }
 }
