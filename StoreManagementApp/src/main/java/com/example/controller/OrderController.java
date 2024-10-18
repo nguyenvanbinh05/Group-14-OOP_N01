@@ -82,8 +82,8 @@ public class OrderController {
         productQuantityColumn.setCellValueFactory(new PropertyValueFactory<>("quantityInStock"));
 
         // Nạp dữ liệu từ file
-        loadOrders(); // Nạp đơn hàng
-        loadProducts(); // Nạp sản phẩm
+        loadOrders();
+        loadProducts();
 
 
 
@@ -96,7 +96,6 @@ public class OrderController {
                 productPriceField.setText(String.valueOf(newValue.getPrice()));
                 productQuantityField.setText(String.valueOf(newValue.getQuantityInStock()));
                 quantityPurchasedField.setText(String.valueOf(newValue.getQuantityPurchased()));
-                // Loại bỏ dòng này vì không còn orderDate
             }
         });
 
