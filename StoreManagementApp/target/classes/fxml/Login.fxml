@@ -11,15 +11,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<!-- Đảm bảo đã import ImageView -->
-<!-- Cũng cần import Image -->
-
 <AnchorPane prefHeight="649.0" prefWidth="802.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.LoginController">
     <children>
         <!-- Hình ảnh background (nền) -->
-        <ImageView fitHeight="649.0" fitWidth="802.0" preserveRatio="false">
+        <ImageView fitHeight="649.0" fitWidth="802.0" opacity="0.56" preserveRatio="false">
             <image>
-                <Image url="@../img/shopping.png" /> <!-- Đường dẫn đến hình ảnh background -->
+                <Image url="@../img/shopping.png" />
             </image>
         </ImageView>
 
@@ -49,7 +46,7 @@
         <!-- Hình ảnh logo -->
         <ImageView fitHeight="142.0" fitWidth="145.0" layoutX="167.0" layoutY="61.0">
             <image>
-                <Image url="@../img/logostore.png" /> <!-- Đường dẫn đến hình ảnh logo -->
+                <Image url="@../img/logostore.png" />
             </image>
         </ImageView>
           <Label layoutX="312.0" layoutY="94.0" prefHeight="76.0" prefWidth="260.0" style="-fx-font-size: 30; -fx-font-weight: bolder;" text="Quản Lí Cửa Hàng" textFill="#040cfa">

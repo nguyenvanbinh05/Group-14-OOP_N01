@@ -11,11 +11,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="649.0" prefWidth="802.0" style="-fx-background-color: none;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.LoginController">
     <children>
         <!-- Hình ảnh background (nền) -->
-        <ImageView fitHeight="649.0" fitWidth="802.0" preserveRatio="false">
+        <ImageView fitHeight="649.0" fitWidth="802.0" opacity="0.56" preserveRatio="false">
             <image>
                 <Image url="@../img/shopping.png" />
             </image>

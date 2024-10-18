@@ -9,7 +9,7 @@ public class Order {
     private int quantityPurchased;
     private double totalValue;  // Thêm thuộc tính tổng giá trị
 
-    // Constructor mới với totalValue
+
     public Order(int orderId, int productId, String productName, double price, int quantityInStock, int quantityPurchased, double totalValue) {
         this.orderId = orderId;
         this.productId = productId;
@@ -20,7 +20,7 @@ public class Order {
         this.totalValue = totalValue;  // Gán giá trị cho tổng giá trị
     }
 
-    // Constructor cũ (nếu cần thiết, bạn có thể giữ nó nếu không cần tổng giá trị)
+
     public Order(int orderId, int productId, String productName, double price, int quantityInStock, int quantityPurchased) {
         this.orderId = orderId;
         this.productId = productId;
@@ -28,7 +28,7 @@ public class Order {
         this.price = price;
         this.quantityInStock = quantityInStock;
         this.quantityPurchased = quantityPurchased;
-        this.totalValue = price * quantityPurchased;  // Tính tổng giá trị
+        this.totalValue = price * quantityPurchased;
     }
 
     // Getter và Setter cho totalValue

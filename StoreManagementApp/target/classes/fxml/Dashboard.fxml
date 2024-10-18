@@ -13,20 +13,14 @@
 <AnchorPane prefHeight="650.0" prefWidth="800.0" style="-fx-background-color: #e1ffff;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.DashboardController">
     <children>
 
-        <!-- Khung chức năng với các nút Đơn Hàng, Logo và Đăng Xuất có thể tùy ý di chuyển -->
         <AnchorPane layoutX="52.0" layoutY="60.0" prefHeight="51.0" prefWidth="688.0" style="-fx-border-color: #66c9f8; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: rgb(215,255,215);">
 
-            <!-- Logo cửa hàng -->
             <ImageView fitHeight="44.0" fitWidth="67.0" layoutY="2.0" opacity="0.88">
                 <image>
                     <Image url="@../img/homepage.png" /> <!-- Đường dẫn đến logo cửa hàng -->
                 </image>
             </ImageView>
-
-            <!-- Nút Đơn Hàng -->
             <Button layoutX="91.0" layoutY="9.0" onAction="#goToOrderManagement" prefHeight="30.0" prefWidth="254.0" style="-fx-background-color: #ffcc78;" text="Quản Lí Các Đơn Đặt Hàng" />
-
-            <!-- Nút Đăng Xuất -->
             <Button layoutX="523.0" layoutY="9.0" onAction="#handleLogout" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: #ffb2c4;" text="Đăng Xuất" />
 
         </AnchorPane>
