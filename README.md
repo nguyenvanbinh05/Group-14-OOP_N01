@@ -36,7 +36,7 @@ Dự án lá một hệ thống quản lí cửa hàng, giúp dễ dàng kiểm 
 [Truy cập tại đây](https://github.com/nguyenvanbinh05/Group-14-OOP_N01/tree/main)
 
 ## DEMO Sản Phẩm
-[Demo video on YouTube]()
+[Demo video on YouTube](https://youtu.be/SdvL0gMCGww)
 
 
 # Cách Cài Đặt
