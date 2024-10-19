@@ -6,4 +6,3 @@
 6,Đồ chơi dành cho trẻ em thú vị,12000.0,1000
 8,Đồ Chay Giả Đồ Ăn Mặn Giống Thật,115000.0,69
 7,Kẹo,15000.0,13
-9,Đồ ăn trung quốc,1000.0,1111111111
